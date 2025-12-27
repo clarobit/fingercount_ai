@@ -1,0 +1,15 @@
+# Build outputs (CubeIDE)
+Debug/
+*.elf
+*.hex
+*.bin
+
+# CubeIDE / CubeMX cache & user settings
+*.launch
+.mxproject
+.ai/
+
+creation_models_py/.venv/
+creation_models_py/data/
+creation_models_py
+
