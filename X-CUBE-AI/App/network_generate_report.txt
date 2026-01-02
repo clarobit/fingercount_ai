@@ -1,6 +1,6 @@
 ST Edge AI Core v2.2.0-20266 2adc00962
-Created date          : 2025-12-27 20:59:27
-Parameters            : generate --target stm32h7 --name network -m /home/we/STM32CubeIDE/workspace_1.19.0/fingercount_ai/creation_models_py/src/models/finger_int8.tflite --compression none --verbosity 1 --workspace /tmp/mxAI_workspace96848543655049728085989917277196 --output /home/we/.stm32cubemx/network_output
+Created date          : 2025-12-27 22:51:11
+Parameters            : generate --target stm32h7 --name network -m /home/we/STM32CubeIDE/workspace_1.19.0/fingercount_ai/creation_models_py/src/models/finger_int8.tflite --compression none --verbosity 1 --workspace /tmp/mxAI_workspace1639494776863314415720937764821440 --output /home/we/.stm32cubemx/network_output
 
 Exec/report summary (generate)
 -----------------------------------------------------------------------------------------------------------------------------------
@@ -11,7 +11,7 @@ compression        :   none
 options            :   allocate-inputs, allocate-outputs                                                                           
 optimization       :   balanced                                                                                                    
 target/series      :   stm32h7                                                                                                     
-workspace dir      :   /tmp/mxAI_workspace96848543655049728085989917277196                                                         
+workspace dir      :   /tmp/mxAI_workspace1639494776863314415720937764821440                                                       
 output dir         :   /home/we/.stm32cubemx/network_output                                                                        
 model_fmt          :   ss/sa per channel                                                                                           
 model_name         :   finger_int8                                                                                                 
