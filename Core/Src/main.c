@@ -366,9 +366,9 @@ void StartTask_Led(void *argument)
   {
     // HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0); // LED 토글
     HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, GPIO_PIN_SET); // LED ON
-    osDelay(1000);
-    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, GPIO_PIN_RESET); // LED OFF
     osDelay(100);
+    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, GPIO_PIN_RESET); // LED OFF
+    osDelay(1000);
   }
   /* USER CODE END StartTask_Led */
 }
