@@ -1,30 +1,30 @@
 ST Edge AI Core v2.2.0-20266 2adc00962
-Created date          : 2026-01-17 15:16:46
-Parameters            : generate --target stm32h7 --name network -m /home/we/STM32CubeIDE/workspace_1.19.0/fingercount_ai/python/creation_models_py/src/models/finger_int8.tflite --compression none --verbosity 1 --workspace /tmp/mxAI_workspace4472904871966606764683766994789 --output /home/we/.stm32cubemx/network_output
+Created date          : 2026-01-19 17:13:18
+Parameters            : generate --target stm32h7 --name network -m /home/we/STM32CubeIDE/workspace_1.19.0/python/creation_models_py/src/models/finger_int8.tflite --compression none --verbosity 1 --workspace /tmp/mxAI_workspace147844239637008498329499087049952 --output /home/we/.stm32cubemx/network_output
 
 Exec/report summary (generate)
----------------------------------------------------------------------------------------------------------------------------------------
-model file         :   /home/we/STM32CubeIDE/workspace_1.19.0/fingercount_ai/python/creation_models_py/src/models/finger_int8.tflite   
-type               :   tflite                                                                                                          
-c_name             :   network                                                                                                         
-compression        :   none                                                                                                            
-options            :   allocate-inputs, allocate-outputs                                                                               
-optimization       :   balanced                                                                                                        
-target/series      :   stm32h7                                                                                                         
-workspace dir      :   /tmp/mxAI_workspace4472904871966606764683766994789                                                              
-output dir         :   /home/we/.stm32cubemx/network_output                                                                            
-model_fmt          :   ss/sa per channel                                                                                               
-model_name         :   finger_int8                                                                                                     
-model_hash         :   0x10acf7421e948db9fefeb11031e22a26                                                                              
-params #           :   433,350 items (423.73 KiB)                                                                                      
----------------------------------------------------------------------------------------------------------------------------------------
-input 1/1          :   'serving_default_input_layer0', int8(1x96x96x1), 9.00 KBytes, QLinear(0.003921569,-128,int8), activations       
-output 1/1         :   'nl_12', int8(1x6), 6 Bytes, QLinear(0.003906250,-128,int8), activations                                        
-macc               :   18,615,568                                                                                                      
-weights (ro)       :   433,896 B (423.73 KiB) (1 segment) / -1,299,504(-75.0%) vs float model                                          
-activations (rw)   :   45,072 B (44.02 KiB) (1 segment) *                                                                              
-ram (total)        :   45,072 B (44.02 KiB) = 45,072 + 0 + 0                                                                           
----------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
+model file         :   /home/we/STM32CubeIDE/workspace_1.19.0/python/creation_models_py/src/models/finger_int8.tflite              
+type               :   tflite                                                                                                      
+c_name             :   network                                                                                                     
+compression        :   none                                                                                                        
+options            :   allocate-inputs, allocate-outputs                                                                           
+optimization       :   balanced                                                                                                    
+target/series      :   stm32h7                                                                                                     
+workspace dir      :   /tmp/mxAI_workspace147844239637008498329499087049952                                                        
+output dir         :   /home/we/.stm32cubemx/network_output                                                                        
+model_fmt          :   ss/sa per channel                                                                                           
+model_name         :   finger_int8                                                                                                 
+model_hash         :   0x10acf7421e948db9fefeb11031e22a26                                                                          
+params #           :   433,350 items (423.73 KiB)                                                                                  
+-----------------------------------------------------------------------------------------------------------------------------------
+input 1/1          :   'serving_default_input_layer0', int8(1x96x96x1), 9.00 KBytes, QLinear(0.003921569,-128,int8), activations   
+output 1/1         :   'nl_12', int8(1x6), 6 Bytes, QLinear(0.003906250,-128,int8), activations                                    
+macc               :   18,615,568                                                                                                  
+weights (ro)       :   433,896 B (423.73 KiB) (1 segment) / -1,299,504(-75.0%) vs float model                                      
+activations (rw)   :   45,072 B (44.02 KiB) (1 segment) *                                                                          
+ram (total)        :   45,072 B (44.02 KiB) = 45,072 + 0 + 0                                                                       
+-----------------------------------------------------------------------------------------------------------------------------------
 (*) 'input'/'output' buffers are allocated in the activations buffer
 
 Model name - finger_int8

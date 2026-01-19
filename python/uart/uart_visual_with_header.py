@@ -3,8 +3,8 @@ import numpy as np
 import cv2
 
 PORT = "/dev/ttyACM0"
-BAUD = 115200
-# BAUD = 921600
+# BAUD = 115200
+BAUD = 921600
 
 W, H = 320, 240
 FRAME_BYTES = W * H * 2  # RGB565 (2 bytes/pixel)

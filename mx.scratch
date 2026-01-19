@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScratchFile FileVersion="3.0">
+  <FileVersion>3.0</FileVersion>
+  <Workspace>
+    <WorkspaceType>Single-project</WorkspaceType>
+    <WorkspacePath>/home/we/STM32CubeIDE/workspace_1.19.0/fingercount_ai/</WorkspacePath>
+    <underRoot>true</underRoot>
+    <TrustZone>0</TrustZone>
+    <HAL_Driver>/home/we/STM32Cube/Repository//STM32Cube_FW_H7_V1.12.1</HAL_Driver>
+    <CMSIS>Drivers/CMSIS</CMSIS>
+    <Toolchain>STM32CubeIDE</Toolchain>
+    <IocFile>fingercount_ai.ioc</IocFile>
+    <Project>
+      <ProjectName>fingercount_ai</ProjectName>
+      <ProjectNature>C</ProjectNature>
+      <Secure />
+      <filestoremove>
+        <file>
+          <name>../X-CUBE-AI/App/network_data.c</name>
+        </file>
+        <file>
+          <name>../Src/stm32h7xx_nucleo.c</name>
+        </file>
+        <file>
+          <name>../X-CUBE-AI/App/network_data_params.c</name>
+        </file>
+        <file>
+          <name>../X-CUBE-AI/App/network.c</name>
+        </file>
+      </filestoremove>
+      <sourceEntriesToRemove>
+        <sourceEntry />
+      </sourceEntriesToRemove>
+      <configs>
+        <config>
+          <name>fingercount_ai</name>
+          <mainSourceRepo>Core</mainSourceRepo>
+          <sourceStructure>Advanced</sourceStructure>
+          <device>STM32H723ZGTx</device>
+          <cpucore>Arm Cortex-M7</cpucore>
+          <fpu>DP</fpu>
+          <memories>
+            <memory access="xrw" name="DTCMRAM" size="131072" start="0x20000000" />
+            <memory access="xrw" name="RAM_D1" size="327680" start="0x24000000" />
+            <memory access="xrw" name="RAM_D2" size="32768" start="0x30000000" />
+            <memory access="xrw" name="RAM_D3" size="16384" start="0x38000000" />
+            <memory access="xrw" name="ITCMRAM" size="65536" start="0x00000000" />
+            <memory access="rx" name="FLASH" size="1048576" start="0x8000000" />
+          </memories>
+          <startup>/home/we/STM32Cube/Repository/STM32Cube_FW_H7_V1.12.1/Drivers/CMSIS/Device\ST\STM32H7xx\Source\Templates\gcc\startup_stm32h723xx.s</startup>
+          <LinkSettings>
+            <LinkAdditionalLibs />
+          </LinkSettings>
+          <heapSize>0x800</heapSize>
+          <stackSize>0x800</stackSize>
+          <cpuclock>200</cpuclock>
+          <board>NUCLEO-H723ZG</board>
+          <optimization />
+          <Aincludes>
+            <include>Core/Inc</include>
+            <include>../Middlewares/ST/AI/Inc</include>
+            <include>../X-CUBE-AI/App</include>
+            <include>Drivers/STM32H7xx_HAL_Driver/Inc</include>
+            <include>Drivers/STM32H7xx_HAL_Driver/Inc/Legacy</include>
+            <include>Middlewares/Third_Party/FreeRTOS/Source/include</include>
+            <include>Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2</include>
+            <include>Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F</include>
+            <include>Drivers/BSP/STM32H7xx_Nucleo</include>
+            <include>Drivers/CMSIS/Device/ST/STM32H7xx/Include</include>
+            <include>Drivers/CMSIS/Include</include>
+          </Aincludes>
+          <Adefines />
+          <Cdefines>
+            <define>USE_PWR_LDO_SUPPLY</define>
+            <define>USE_NUCLEO_64</define>
+            <define />
+            <define>USE_HAL_DRIVER</define>
+            <define>STM32H723xx</define>
+          </Cdefines>
+          <Ldefines />
+          <Cincludes>
+            <include>Core/Inc</include>
+            <include>../Middlewares/ST/AI/Inc</include>
+            <include>../X-CUBE-AI/App</include>
+            <include>Drivers/STM32H7xx_HAL_Driver/Inc</include>
+            <include>Drivers/STM32H7xx_HAL_Driver/Inc/Legacy</include>
+            <include>Middlewares/Third_Party/FreeRTOS/Source/include</include>
+            <include>Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2</include>
+            <include>Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F</include>
+            <include>Drivers/BSP/STM32H7xx_Nucleo</include>
+            <include>Drivers/CMSIS/Device/ST/STM32H7xx/Include</include>
+            <include>Drivers/CMSIS/Include</include>
+          </Cincludes>
+          <definestoremove>
+            <Adefines />
+            <Cdefines>
+              <define>USE_FULL_LL_DRIVER</define>
+              <define>USE_FULL_ASSERT=1U</define>
+            </Cdefines>
+            <Ldefines />
+          </definestoremove>
+          <inctoremove>
+            <Aincludes>
+              <include />
+            </Aincludes>
+            <Cincludes />
+          </inctoremove>
+        </config>
+      </configs>
+      <copyAsReference>false</copyAsReference>
+      <sourceEntries>
+        <sourceEntry>
+          <name>Core</name>
+        </sourceEntry>
+        <sourceEntry>
+          <name>Drivers</name>
+        </sourceEntry>
+        <sourceEntry>
+          <name>Middlewares</name>
+        </sourceEntry>
+        <sourceEntry>
+          <name>X-CUBE-AI</name>
+        </sourceEntry>
+      </sourceEntries>
+      <Groups>
+        <group>
+          <name>Lib</name>
+          <file>
+            <name>Middlewares/ST/AI/Lib/NetworkRuntime1020_CM7_GCC.a</name>
+          </file>
+        </group>
+      </Groups>
+    </Project>
+  </Workspace>
+</ScratchFile>
+
