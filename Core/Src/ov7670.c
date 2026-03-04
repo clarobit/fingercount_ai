@@ -60,9 +60,18 @@ RET ov7670_config(uint32_t mode)
   ov7670_stopCap();
   ov7670_write(0x12, 0x80); // RESET
   HAL_Delay(30);
-  for (int i = 0; OV7670_reg[i][0] != REG_BATT; i++)
+  
+  // // original
+  // for (int i = 0; OV7670_reg[i][0] != REG_BATT; i++)
+  // {
+  //   ov7670_write(OV7670_reg[i][0], OV7670_reg[i][1]);
+  //   HAL_Delay(1);
+  // }
+
+  // by clarobit
+  for (int i = 0; OV7670_reg_manual[i][0] != REG_BATT; i++)
   {
-    ov7670_write(OV7670_reg[i][0], OV7670_reg[i][1]);
+    ov7670_write(OV7670_reg_manual[i][0], OV7670_reg_manual[i][1]);
     HAL_Delay(1);
   }
   return RET_OK;

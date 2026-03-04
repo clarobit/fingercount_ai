@@ -1,6 +1,6 @@
 ST Edge AI Core v2.2.0-20266 2adc00962
-Created date          : 2026-01-19 17:13:18
-Parameters            : generate --target stm32h7 --name network -m /home/we/STM32CubeIDE/workspace_1.19.0/python/creation_models_py/src/models/finger_int8.tflite --compression none --verbosity 1 --workspace /tmp/mxAI_workspace147844239637008498329499087049952 --output /home/we/.stm32cubemx/network_output
+Created date          : 2026-01-21 16:59:05
+Parameters            : generate --target stm32h7 --name network -m /home/we/STM32CubeIDE/workspace_1.19.0/python/creation_models_py/src/models/finger_int8.tflite --compression none --verbosity 1 --workspace /tmp/mxAI_workspace44504516814469939655327926819705 --output /home/we/.stm32cubemx/network_output
 
 Exec/report summary (generate)
 -----------------------------------------------------------------------------------------------------------------------------------
@@ -11,7 +11,7 @@ compression        :   none
 options            :   allocate-inputs, allocate-outputs                                                                           
 optimization       :   balanced                                                                                                    
 target/series      :   stm32h7                                                                                                     
-workspace dir      :   /tmp/mxAI_workspace147844239637008498329499087049952                                                        
+workspace dir      :   /tmp/mxAI_workspace44504516814469939655327926819705                                                         
 output dir         :   /home/we/.stm32cubemx/network_output                                                                        
 model_fmt          :   ss/sa per channel                                                                                           
 model_name         :   finger_int8                                                                                                 
